@@ -6,6 +6,9 @@ html {
 {
  color : #a7c404
 }
+.marTop {
+	margin-top: 80px;
+	}
 body {
   background: #fff;
   font-size: 14px;
@@ -67,6 +70,7 @@ a:not([href]):not([tabindex]) {
 
 .section-header {
   margin-bottom: 30px;
+  margin-top:30px;
 }
 
 .section-header p {
@@ -107,7 +111,38 @@ a:not([href]):not([tabindex]) {
   left: 0px;
   background: rgba(61, 96, 244, 0.3);
 }
+/* CSS header */
+.info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999999;
+  margin: 1.5rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+*, *::before, *::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+html {
+	font-size: 10px;
+	font-size: calc(5px + 0.4vw);
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+	font-size: 1rem;
 
+}
+a {
+  text-decoration: none;
+
+}
+/* Slider style */
+
+/* fin header */
 .btn {
   font-size: 14px;
   padding: 10px 30px;
@@ -593,13 +628,13 @@ hr {
 .navbar-expand-md .navbar-nav .nav-link {
   color: #333;
   font-weight: 400;
-  padding: 7px 0;
   cursor: pointer;
   position: relative;
   background: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  font-size: 1.5em;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:before {
@@ -646,6 +681,7 @@ hr {
 
 .navbar {
   padding: 10px 0;
+  background:#fff;
 }
 
 .navbar li.active a.nav-link {
@@ -750,11 +786,11 @@ hr {
 3. Hero Area
 ========================================================================== */
 #hero-area {
-  background-image: url(../img/hero-area.svg);
+  background-image: url(../img/banner.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 650px;
+  min-height: 600px;
   position: relative;
   overflow: hidden;
   padding: 180px 0 80px;
